@@ -11,20 +11,25 @@ void academias(){
     float fitnessMensal = 69.99 * 12;
     float fitnessAnual = 58.99 * 12; 
 
-    printf("---Viva Saúde---");
-    printf("Mensal: %.2f por ano", vivaMensal);
-    printf("Anual: %.2f por ano", vivaAnual);
+    printf("\n---Viva Saúde---");
+    printf("\nMensal: %.2f por ano", vivaMensal);
+    printf("\nAnual: %.2f por ano", vivaAnual);
 
-    printf("---Saúde em dia---");
-    printf("Mensal: %.2f por ano", saudeMensal);
-    printf("Anual: %.2f por ano", saudeAnual);
+    printf("\n---Saúde em dia---");
+    printf("\nMensal: %.2f por ano", saudeMensal);
+    printf("\nAnual: %.2f por ano", saudeAnual);
 
-    printf("---Fitness Pro---");
-    printf("Mensal: %.2f por ano", fitnessMensal);
-    printf("Anual: %.2f por ano", fitnessMensal);
+    printf("\n---Fitness Pro---");
+    printf("\nMensal: %.2f por ano", fitnessMensal);
+    printf("\nAnual: %.2f por ano", fitnessAnual);
 
-
-
+     if (vivaAnual < saudeAnual && vivaAnual < fitnessAnual) {
+        printf("\nAs opções anuais são mais baratos, mas entre elas a Viva Saude.");
+    } else if (saudeAnual < vivaAnual && saudeAnual < fitnessAnual) {
+        printf("\nAs opções anuais são mais baratos, mas entre elas a Saude em Dia.");
+    } else {
+        printf("\nAs opções anuais são mais baratos, mas entre elas a Fitness Pro.");
+    }
 }
 
 int main() {
